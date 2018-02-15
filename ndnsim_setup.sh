@@ -5,6 +5,9 @@ echo "Installing compiler, all necessary development tools and libraries, and nd
 sudo apt-get install build-essential libsqlite3-dev libcrypto++-dev libboost-all-dev libssl-dev git python-setuptools
 sudo apt-get install python-dev python-pygraphviz python-kiwi python-pygoocanvas python-gnome2 python-rsvg ipython
 
+#For the visualizer...
+sudo apt install gtk2-engines-pixbuf
+
 echo "Installing ndnSIM"
 mkdir ndnSIM
 cd ndnSIM
