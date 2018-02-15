@@ -8,3 +8,5 @@ cd ns-3
 ./waf configure --enable-examples
 ./waf
 
+#Run the example
+#NS_LOG=ndn.Producer:ndn.Consumer ./waf --run=ndn-simple
