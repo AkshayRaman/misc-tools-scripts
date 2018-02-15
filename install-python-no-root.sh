@@ -1,3 +1,4 @@
+#Didn't work as well as I would have liked. Oh well ¯\_(ツ)_/¯
 cd
 mkdir python
 cd python
