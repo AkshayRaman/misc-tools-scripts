@@ -10,3 +10,4 @@ cd ns-3
 
 #Run the example
 #NS_LOG=ndn.Producer:ndn.Consumer ./waf --run=ndn-simple
+#NS_LOG=ndn.Producer:ndn.Consumer ./waf --run=ndn-simple --vis
