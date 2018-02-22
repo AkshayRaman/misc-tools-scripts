@@ -9,8 +9,11 @@ sudo apt-get install python-dev python-pygraphviz python-kiwi python-pygoocanvas
 sudo apt install gtk2-engines-pixbuf
 
 echo "Installing ndnSIM"
-mkdir ndnSIM
-cd ndnSIM
+export ndnsim_root_dir=ndnSIM
+mkdir $ndnsim_root_dir
+cd $ndnsim_root_dir
+unset ndnsim_root_dir
+
 git clone https://github.com/named-data-ndnSIM/ns-3-dev.git ns-3
 git clone https://github.com/named-data-ndnSIM/pybindgen.git pybindgen
 git clone --recursive https://github.com/named-data-ndnSIM/ndnSIM.git ns-3/src/ndnSIM
