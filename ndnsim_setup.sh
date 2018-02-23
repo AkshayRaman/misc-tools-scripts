@@ -19,8 +19,14 @@ git clone https://github.com/named-data-ndnSIM/pybindgen.git pybindgen
 git clone --recursive https://github.com/named-data-ndnSIM/ndnSIM.git ns-3/src/ndnSIM
 
 cd ns-3
-./waf configure --enable-examples
+./waf configure -d optimized
 ./waf
+sudo ./waf install
+
+git clone https://github.com/named-data-ndnSIM/scenario-template.git scenario
+cd scenario
+./waf configure
+#./waf --run <scenario>
 
 date
 echo "Done..."
