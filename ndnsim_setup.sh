@@ -23,9 +23,11 @@ cd ns-3
 ./waf
 sudo ./waf install
 
+cd ..
 git clone https://github.com/named-data-ndnSIM/scenario-template.git scenario
 cd scenario
 ./waf configure
+./waf
 #./waf --run <scenario>
 
 date
