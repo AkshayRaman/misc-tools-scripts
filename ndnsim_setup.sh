@@ -24,8 +24,8 @@ cd ns-3
 sudo ./waf install
 
 cd ..
-git clone https://github.com/named-data-ndnSIM/scenario-template.git scenario
-cd scenario
+git clone --recursive https://github.com/akshayraman/scenario-ntorrent.git
+cd scenario-ntorrent
 ./waf configure
 ./waf
 #./waf --run <scenario>
