@@ -10,8 +10,7 @@ sudo apt install gtk2-engines-pixbuf
 
 echo "Installing ndnSIM"
 export ndnsim_root_dir=ndnSIM
-mkdir $ndnsim_root_dir
-cd $ndnsim_root_dir
+mkdir $ndnsim_root_dir && cd $ndnsim_root_dir
 unset ndnsim_root_dir
 
 git clone -b ndnSIM-2.5 https://github.com/named-data-ndnSIM/ns-3-dev.git ns-3
@@ -27,12 +26,8 @@ cd ..
 git clone --recursive https://github.com/akshayraman/scenario-ntorrent.git
 cd scenario-ntorrent
 ./waf configure
-./waf
-#./waf --run <scenario>
+#./waf --run ntorrent-simple --vis
 
-date
 echo "Done..."
+date
 
-#Run the example
-#NS_LOG=ndn.Producer:ndn.Consumer ./waf --run=ndn-simple
-#NS_LOG=ndn.Producer:ndn.Consumer ./waf --run=ndn-simple --vis
