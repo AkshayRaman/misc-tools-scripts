@@ -11,6 +11,6 @@ conda install tensorflow
 pip install keras
 pip install h5py
 pip install sklearn
-pip install matplotlib
+conda install matplotlib
 
 
