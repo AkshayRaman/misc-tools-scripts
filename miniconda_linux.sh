@@ -8,9 +8,10 @@ conda create -n env python=3.6
 source activate env
 
 conda install tensorflow
-pip install keras
-pip install h5py
-pip install sklearn
-pip install matplotlib
-
+conda install keras
+conda install h5py
+conda install sklearn
+conda install matplotlib
+conda install pydot
+conda install graphviz
 
