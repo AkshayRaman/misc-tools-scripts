@@ -7,6 +7,7 @@ sudo apt-get install python-dev python-pygraphviz python-kiwi python-pygoocanvas
 
 #For the visualizer...
 sudo apt install gtk2-engines-pixbuf
+sudo apt install python-gnome2-desktop-dev
 
 pwd=`pwd`
 
