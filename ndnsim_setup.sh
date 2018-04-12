@@ -24,6 +24,14 @@ cd $ndnsim_root_dir/ns-3
 ./waf
 sudo ./waf install
 
+if [[ `uname -a | grep Linux` ]]; then
+    #When using Linux
+    sudo ldconfig;
+elif [[ `uname -a | grep FreeBSD` ]]; then
+    #When using FreeBSD
+    sudo ldconfig -a;
+fi
+
 cd $ndnsim_root_dir
 git clone --recursive https://github.com/akshayraman/scenario-ntorrent.git
 cd $ndnsim_root_dir/scenario-ntorrent
